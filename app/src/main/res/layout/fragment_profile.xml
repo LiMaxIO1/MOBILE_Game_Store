@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#121212"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/nicknameTextView"
+                android:text="User123"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/changeNicknameButton"
+                android:src="@drawable/ic_edit"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Сменить никнейм"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#FFFFFF" />
+        </LinearLayout>
+
+
+        <!-- Фото профиля -->
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_marginTop="24dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_profile_placeholder"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            android:padding="4dp" />
+
+        <!-- Почта -->
+        <TextView
+            android:id="@+id/emailTextView"
+            android:text="Email"
+            android:textColor="#CCCCCC"
+            android:layout_marginTop="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Маска пароля -->
+        <TextView
+            android:id="@+id/passwordTextView"
+            android:text="Пароль: ********"
+            android:textColor="#CCCCCC"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!-- Выйти -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:text="Выйти"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF5252"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

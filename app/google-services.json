@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "92086237927",
+    "project_id": "finalgamestore-37301",
+    "storage_bucket": "finalgamestore-37301.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92086237927:android:013954f0682d54930d0042",
+        "android_client_info": {
+          "package_name": "com.example.final_game_store"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJNfSS4UAQGPJ62kdJM0M-kFTpiehegFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
