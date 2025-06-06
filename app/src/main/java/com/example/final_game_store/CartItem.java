@@ -11,6 +11,14 @@ public class CartItem {
         this.quantity = 1;
     }
 
+    public CartItem(String gameId, String name, String imageUrl, double price, int quantity) {
+        this.gameId = gameId;
+        this.name = name;
+        this.imageUrl = imageUrl;
+        this.price = price;
+        this.quantity = quantity;
+    }
+
     public String getGameId() {
         return gameId;
     }
@@ -53,5 +61,9 @@ public class CartItem {
 
     public double getTotalPrice() {
         return price * quantity;
+    }
+
+    public void incrementQuantity() {
+        this.quantity++;
     }
 }

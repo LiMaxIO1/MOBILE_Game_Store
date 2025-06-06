@@ -70,7 +70,7 @@ public class GameDetailsFragment extends Fragment {
 
         addToCartButton.setOnClickListener(v -> {
             CartItem item = new CartItem();
-            item.setGameId(name); // Лучше использовать уникальный ID, если есть
+            item.setGameId(name);
             item.setName(name);
             item.setPrice(price);
             item.setImageUrl(imageUrl);

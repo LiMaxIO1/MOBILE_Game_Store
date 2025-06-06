@@ -45,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
         } else {
             loadFragment(new HomeFragment());
             bottomNav.setVisibility(View.VISIBLE);
+
+            // Загрузить корзину из Firebase
+            CartManager.loadCartFromFirebase(cartItems -> {
+                // Можно обновить UI корзины, если нужно
+            });
         }
     }
 
@@ -57,5 +62,13 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+        // Синхронизировать корзину с Firebase при закрытии
+        CartManager.syncCartToFirebase();
     }
 }

@@ -56,12 +56,13 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
 
     @Override
     public int getItemCount() {
-        return gameList.size();
+        return gameList != null ? gameList.size() : 0;
     }
 
     public static class GameViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
-        TextView nameTextView, priceTextView;
+        TextView nameTextView;
+        TextView priceTextView;
 
         public GameViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -71,4 +72,3 @@ public class GameAdapter extends RecyclerView.Adapter<GameAdapter.GameViewHolder
         }
     }
 }
-
